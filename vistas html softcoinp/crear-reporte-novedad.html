@@ -1,0 +1,122 @@
+<html>
+<head>
+    <title>Reporte de novedad</title>
+    <style>
+       
+        body
+		{
+            font-family: "Arial", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+			
+        }
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            padding: 50px;
+            border: 1px solid #908d8d;
+            border-radius: 10px;
+            background-color: #2980B9;
+            display: flex;
+			
+	
+        }
+		
+		.container-2 {
+            width: 920px;
+			height:440px;
+            margin: 0 auto;
+            padding:20px;
+            background-color: #ffffff;
+            display: flex;
+			border-radius: 10px;
+			h4 {color:#000000};
+		}	
+		
+		.column {
+            flex: 1; 
+            padding: 20px; 
+            border: 1px solid #ffffff;
+			h4 {color:#000000}
+	    }
+		
+		.button {
+           font-size: 20px; 
+           padding: 20px 20px;
+		   min-width: 200px;
+		   cursor: pointer;
+		   background-color: #27ae60; 
+	       color:#ffffff;
+		   border-radius: 10px;
+		} 
+		
+		table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 50%;
+			
+        }
+
+        th {
+            background-color: #ccc;
+            padding: 10px;
+			border: 1px solid black;
+
+        }
+
+        td {
+            padding: 75px;
+			border: 1px solid black;
+		
+      
+		
+</style>
+</head>
+<body>
+       <div class="container">
+	   <div class="container-2">
+	 
+	   <div class="column">
+	   <form action="/busqueda" method="get">
+	        <label for="Identificacion" style="font-weight:bold">Identificación</label>
+            <input type="text" name="q" required style="border-radius:5px">
+			
+		<br><br><br><br>
+		<label for="reason"style="font-weight:bold">¿Que ocurre?</label><br><br><br>
+        <textarea id="reason" name="reason" rows="16" cols="40" required style="border-radius: 10px"></textarea>
+       </form>
+	   </div>
+	   
+	   <div class="column">
+	   <br><br><br><br><br><br><br><br><br>
+	   <button type="submit" class="button">Guardar</button><br><br>
+	   <button type="submit" class="button">Generar informe</button>
+	   </div>
+	   
+	   <div class="column">
+	   <br><br><br>
+	   
+	   <h4>Historial de reportes</h4><br><br>
+    <table>
+        <tr>
+            <th>Fecha</th>
+            <th>Novedad</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        
+    </table>
+		
+       </div>		
+	   
+   
+	   </div>
+	   </div>
+</body>
+</html>	

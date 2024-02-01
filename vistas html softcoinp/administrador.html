@@ -1,0 +1,129 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Administrador</title>
+    <style>
+         body
+		{
+            font-family: "Arial", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+			
+        }
+		
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            padding: 50px;
+            border: 1px solid #908d8d;
+            border-radius: 10px;
+            background-color: #2980B9;
+            display: flex;
+			h2 {color:white};
+        }
+		.container-2 {
+         width: 920px;
+         height:440px;
+         margin: 0 auto;
+         padding:20px;
+         background-color: #ffffff;
+         display: flex;
+         h2 {color:#000000};
+		 h2 {text-align:center};
+         }	
+		 .column {
+         flex: 4; 
+         padding: 20px; 
+         border: 1px solid #ffffff;
+         }
+		 .button {
+         font-size: 12px; 
+         padding: 15px 15px;
+         min-width: 180px;
+         cursor: pointer;
+         background-color: #b0afaf; 
+         color:#ffffff;
+         border-radius: 10px;
+         }
+		 
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="container-2">
+    <div class="column">
+        <h2>Personal</h2>
+        <div class="sub-column"><br>
+            <form action="crear-perfil.html" method="post">
+                <button type="submit" class="button"><i class="fas fa-user-plus fa-lg"></i><br>Crear perfil</button>
+            </form>
+        </div>
+        <div class="sub-column"><br>
+            <form action="actualizar-perfil.html" method="post">
+                <button type="submit" class="button"><i class="fas fa-edit fa-lg"></i><br>Actualizar perfil</button>
+            </form>
+        </div>
+        <div class="sub-column"><br>
+            <form action="bloquear-perfil.html" method="post">
+                <button type="submit" class="button"><i class="fas fa-lock fa-lg"></i><br>Bloquear perfil</button>
+            </form>
+        </div>
+        <div class="sub-column"><br>
+            <form action="eliminar-perfil.html" method="post">
+                <button type="submit" class="button"><i class="fas fa-trash fa-lg"></i><br>Eliminar perfil</button>
+            </form>
+        </div>
+    </div>
+    <div class="column">
+        <h2>Informes</h2>
+        <div class="sub-column"><br>
+            <form action="generar-informes-ingresos.html" method="post">
+                <button type="submit" class="button"><i class="fas fa-file-alt fa-lg"></i><br>Generar informes de ingresos</button>
+            </form>
+        </div>
+        <div class="sub-column"><br>
+            <form action="generar-informes-novedades.html" method="post">
+                <button type="submit" class="button"><i class="fas fa-file-alt fa-lg"></i><br>Generar informes de novedades</button>
+            </form>
+        </div>
+    </div>
+    <div class="column">
+        <h2>Operadores</h2>
+        <div class="sub-column"><br>
+            <form action="crear-operador.html" method="post">
+                <button type="submit" class="button"><i class="fas fa-user-plus fa-lg"></i><br>Crear operador</button>
+            </form>
+        </div>
+        <div class="sub-column"><br>
+            <form action="actualizar-operador.html" method="post">
+                <button type="submit" class="button"><i class="fas fa-edit fa-lg"></i><br>Actualizar operador</button>
+            </form>
+        </div>
+        <div class="sub-column"><br>
+            <form action="eliminar-operador.html" method="post">
+                <button type="submit" class="button"><i class="fas fa-trash fa-lg"></i><br>Eliminar operador</button>
+            </form>
+        </div>
+    </div>
+    <div class="column">
+        <h2>Ajustes</h2>
+        <div class="sub-column"><br>
+            <form action="opciones-desarrollador.html" method="post">
+                <button type="submit" class="button"><i class="fas fa-cogs fa-lg"></i><br>Opciones de desarrollador</button>
+            </form>
+        </div>
+        <div class="sub-column"><br>
+            <form action="administrar-contraseñas.html" method="post">
+                <button type="submit" class="button"><i class="fas fa-key fa-lg"></i><br>Administrar contraseñas</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
+

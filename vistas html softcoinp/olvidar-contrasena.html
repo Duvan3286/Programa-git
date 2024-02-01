@@ -1,0 +1,58 @@
+
+<html>
+<head>
+    <title>Recuperar Contraseña</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+			h2 {color:#ffffff};
+        }
+			
+        .container {
+            max-width: 350px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #0074d9;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+	    <img src="icono-contrasena.jpg" alt="imagen icono contraseña" width="100" height="100">
+        <h1>¿Olvidaste tu contraseña?</h1>
+        <p>Introduce el email registrado.</p>
+		<p>En unos minutos recibiras en esa misma cuenta de correo un mail con una contraseña provisional.</p>
+
+        <form action="procesar_recuperacion.php" method="post">
+            <input type="text" name="email" placeholder="Escribe tu email" required>
+            <button type="submit">Enviar email</button>
+        </form>
+    </div>
+	
+</body>
+</html>
